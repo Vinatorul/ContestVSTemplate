@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <ctime>
 #include <cmath>
+#include <map>
 #include <string>
 #include <cstring>
 #ifdef HOME
@@ -23,7 +24,12 @@ using namespace std;
 typedef long long ll;
 typedef double db;
 typedef vector<int> vi;
+typedef vector<ll> vll;
 typedef pair<int, int> pii;
+typedef map<int, int> mii;
+typedef set<int> si;
+typedef queue<int> qi;
+typedef priority_queue<int> pqi;
 
 int main()
 {
