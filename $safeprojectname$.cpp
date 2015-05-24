@@ -9,27 +9,33 @@
 #include <map>
 #include <string>
 #include <cstring>
+#include <stack>
+#include <deque>
 #ifdef HOME
 #include <cassert>
 #pragma warning (disable: 4996)
 #endif
 
-#define fi first
-#define se second
-#define pb push_back
-#define mp make_pair
+#define ifthen(x,y,z) (x ? y : z)
 
 using namespace std;
 
 typedef long long ll;
 typedef double db;
-typedef vector<int> vi;
-typedef vector<ll> vll;
-typedef pair<int, int> pii;
-typedef map<int, int> mii;
-typedef set<int> si;
-typedef queue<int> qi;
-typedef priority_queue<int> pqi;
+typedef unsigned long long ull;
+typedef unsigned int uint;
+
+long long GCD(long long a, long long b)
+{
+  if (0 == b)
+    return a;
+  return GCD(b, a%b);
+}
+
+long long LCM(long long a, long long b)
+{
+  return (a / GCD(a, b)) * b;
+}
 
 int main()
 {
@@ -39,8 +45,7 @@ int main()
   assert(freopen("output.txt", "w", stdout)); 
 #endif
 
-
-
+  // Insert your code here
 
 #ifdef HOME
   cout << "Time: " << (int)(clock() * 1000. / CLOCKS_PER_SEC) << " ms\n";
